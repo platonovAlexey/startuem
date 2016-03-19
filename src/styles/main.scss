@@ -1,0 +1,15 @@
+// default
+@import "helpers/normalize";
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "helpers/fonts";
+
+// sections
+@import "sections/header";
+@import "sections/footer";
+
+// sprite (подключать в каждом файле, где используются иконки)
+@import "../img/sprites/sprite";
+
+//fonts
+@import "../fonts/stylesheet.css";
