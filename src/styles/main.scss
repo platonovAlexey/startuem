@@ -9,7 +9,15 @@
 @import "sections/footer";
 
 // sprite (подключать в каждом файле, где используются иконки)
-@import "../img/sprites/sprite";
+//@import "../img/sprites/sprite";
 
 //fonts
-@import "../fonts/stylesheet.css";
+//@import "../fonts/stylesheet.css";
+
+
+body{
+	font-size: $fzbody;
+	line-height: $lhbody;
+	font-family: sans-serif;
+}
+

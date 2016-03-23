@@ -1,13 +1,14 @@
 # Установка
 
 ```sh
-$ git clone https://github.com/platonovAlexey/startuem
-$ cd startuem
+$ git clone https://github.com/platonovAlexey/startuem.git #название папки
+$ cd #название папки
 $ npm install
 $ bower install
 ```
 
 #### Инструкции по проектру
+	- Сборка предназначена для "новых"" браузеров IE10+
 	- Создана структура сайта, все разбито по папкам
 	- gulp-rigger — это просто киллер фича. Плагин позволяет импортировать один файл в другой простой конструкцией //=
 	- Для спрайтов использован плагин gulp.spritesmith - чтобы все заработало в консоли нужно прописать команду **gulp sprite** путь в миксинах sprite.scss background-image: url(/img/sprites/#{$sprite-image})
@@ -15,6 +16,8 @@ $ bower install
 	- Вшит **normalize.css**
 	- Подключены стили и скрипты
 	- Шрифты нужно генерировать через [белку], файлы уже подключены
+	- Добавлен gulp plugin pxtorem, который переводи px в rem
+	- Добавлены переменные font-size/line-height для body
 
 
 #### Структура
