@@ -13,7 +13,6 @@ var gulp = require('gulp'),
 		spritesmith = require('gulp.spritesmith'),
 		rimraf = require('rimraf'),
 		browserSync = require("browser-sync"),
-		pxtorem = require('gulp-pxtorem'),
 		reload = browserSync.reload;
 
 var path = {
@@ -107,7 +106,6 @@ gulp.task('styles:build', function () {
 			sourceMap: true,
 			errLogToConsole: true
 		}))
-		.pipe(pxtorem())
 		.pipe(prefixer())
 		.pipe(cssmin())
 		.pipe(sourcemaps.write())

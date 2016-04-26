@@ -3,6 +3,7 @@
 @import "helpers/mixins";
 @import "helpers/variables";
 @import "helpers/fonts";
+@import "helpers/px-to-em";
 
 // sections
 @import "sections/header";
@@ -11,13 +12,14 @@
 // sprite (подключать в каждом файле, где используются иконки)
 //@import "../img/sprites/sprite";
 
-//fonts
-//@import "../fonts/stylesheet.css";
-
 
 body{
-	font-size: $fzbody;
-	line-height: $lhbody;
-	font-family: sans-serif;
+	font-family: "RobotoRegular", sans-serif;
+	font-weight: normal;
+	font-size: $pxval;
+	line-height: $base;
+	min-width: 320px;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden
 }
-
